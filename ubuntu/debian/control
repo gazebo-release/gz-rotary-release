@@ -1,0 +1,62 @@
+Source: gz-rotary
+Standards-Version: 3.9.5
+Maintainer: Jose Luis Rivero <jrivero@honurobotics.com>
+Section: science
+Priority: optional
+Build-Depends: debhelper (>= 13),
+               libgz-cmake-dev,
+               libgz-common-dev,
+               libgz-fuel-tools-dev,
+               libgz-sim-dev,
+               libgz-gui-dev,
+               libgz-launch-dev,
+               libgz-math-dev,
+               libgz-msgs-dev,
+               libgz-physics-dev,
+               libgz-plugin-dev,
+               libgz-rendering-dev,
+               libgz-sensors-dev,
+               libgz-tools-dev,
+               libgz-transport-dev,
+               libgz-utils-cli-dev,
+               libgz-utils-dev,
+               libsdformat-dev
+Vcs-Browser: https://github.com/gazebo-release/gz-rotary-release
+Vcs-Git: https://github.com/gazebo-release/gz-rotary-release
+Homepage: http://gazebosim.org/
+
+Package: gz-rotary
+Architecture: any
+Section: libdevel
+Depends: libgz-cmake-dev,
+         libgz-common-dev,
+         libgz-fuel-tools-dev,
+         libgz-sim-dev,
+         libgz-gui-dev,
+         libgz-launch-dev,
+         libgz-math-dev,
+         libgz-msgs-dev,
+         libgz-physics-dev,
+         libgz-plugin-dev,
+         libgz-rendering-dev,
+         libgz-sensors-dev,
+         libgz-tools-dev,
+         libgz-transport-dev,
+         libgz-utils-cli-dev,
+         libgz-utils-dev,
+         libsdformat-dev,
+         gz-launch-cli,
+         gz-plugin-cli,
+         gz-sim-cli,
+         gz-transport-cli,
+         sdformat-cli,
+         python3-gz-math,
+         python3-gz-msgs,
+         python3-gz-sim,
+         python3-gz-transport,
+         python3-sdformat,
+         ${misc:Depends}
+Multi-Arch: foreign
+Description: Collection of Gazebo packages - Rotary
+  This is a metapackage used for triggering the whole collection of Gazebo
+  packages corresponding to the Rotary collection
